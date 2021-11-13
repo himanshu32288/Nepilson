@@ -9,8 +9,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Steps To Run This project
-1.Run npm install from root folder i.e,Nepilson.\
-2.npm start for starting Development Server.
+1.Run `npm install` from root folder i.e,Nepilson.\
+2.`npm start` for starting Development Server.
 
 ## Guidline to run This project.
 1.States and input Symbol Should be entered in csv format i e,A,B,C etc.\
