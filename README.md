@@ -10,14 +10,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Steps To Run This project
 1.Run npm install from root folder i.e,Nepilson.\
-2.Npm Start for starting Development Server.\
+2.Npm Start for starting Development Server.
 
-## Guidline to run This project.\
+## Guidline to run This project.
 1.States and input Symbol Should be entered in csv format i e,A,B,C etc.\
 2.Do not write epilson as a state because it is automatically generated.\
 3.In place of Empty transition enter "-".\
 4.If a state going to more than one transition enter transition in csv format\
-  For ex:-if A on input 0 going to B and C smiply enter B,C.\
+  For ex:-if A on input 0 going to B and C smiply enter B,C.
+
 
 
 
