@@ -1,5 +1,5 @@
 # Nepilson 
-https://jolly-wright-5d2a98.netlify.app/
+https://jolly-wright-5d2a98.netlify.app/ \
 This App will Convert given Nfa with epilson move to equivalent dfa.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 <h3 align="left">Languages and Tools:</h3>
