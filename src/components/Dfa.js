@@ -27,7 +27,7 @@ const Dfa = props => {
         let jsx = [];
         for (let j = 0; j < props.dfa[0].length; j++) {
             jsx.push(<td key={`dfa${(i + 1) * (j + 1)}`}>{props.dfa[i][j]}</td>)
-            if (j > 0 && props.dfa[i][j] !== "-") {
+            if (j > 0 ) {
                 dotStr +=
                     "" +
                     props.dfa[i][0] +
