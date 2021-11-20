@@ -28,14 +28,14 @@ const Dfa = props => {
         for (let j = 0; j < props.dfa[0].length; j++) {
             jsx.push(<td key={`dfa${(i + 1) * (j + 1)}`}>{props.dfa[i][j]}</td>)
             if (j > 0 ) {
-                dotStr +=
-                    "" +
-                    props.dfa[i][0] +
-                    " -> " +
-                    props.dfa[i][j]==="-"?"Trap":props.dfa[i][j] +
-                    " [label=" +
-                    props.inputSymbol[j - 1] +
-                    "];\n";
+                dotStr +=`
+                     
+                    ${props.dfa[i][0]}
+                     ->  
+                    ${props.dfa[i][j]==="-"?"Trap":props.dfa[i][j]} 
+                     [label= 
+                    ${props.inputSymbol[j - 1]} 
+                    ];\n`;
             }
         }
         body.push(<tr key={i + 1}>{jsx}</tr>)
