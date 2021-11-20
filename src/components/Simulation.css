@@ -1,0 +1,16 @@
+.form-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+  height: 20vh;
+  margin: 30px 30px 5px 400px;
+}
+.button {
+  margin-top: 10px;
+}
+
+.button-content {
+  display: flex;
+  flex-direction: row;
+}
