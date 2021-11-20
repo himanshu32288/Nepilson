@@ -1,0 +1,12 @@
+.table-content {
+  width: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: 5rem;
+}
+.mid-button {
+  margin-left: 45rem;
+  margin-bottom: 15px;
+}
