@@ -32,7 +32,7 @@ const Dfa = props => {
                     "" +
                     props.dfa[i][0] +
                     " -> " +
-                    props.dfa[i][j] +
+                    props.dfa[i][j]==="-"?"Trap":props.dfa[i][j] +
                     " [label=" +
                     props.inputSymbol[j - 1] +
                     "];\n";
