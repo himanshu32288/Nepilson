@@ -26,10 +26,8 @@ const Nfa = (props) => {
             for (const y of parsed_nfa) {
                 if (y !== "-") {
                     temp[hash_of_states[y]] = true;
-
                 }
             }
-
         }
 
         let temp1 = new Array(n).fill(false);
@@ -96,14 +94,12 @@ const Nfa = (props) => {
             const visited = new Array(n).fill(false);
 
             dfs(graph, i, visited);
+
             reachable_states[i] = [];
-
-            for (let j = 0; j < n; j++) {
-
-
+              for (let j = 0; j < n; j++) {
                 if (visited[j])
                     reachable_states[i].push(j);
-            }
+                }
         }
 
     }
@@ -111,13 +107,11 @@ const Nfa = (props) => {
 
 
         for (let i = 0; i < reachable_states.length; i++) {
-
             let clos = "";
             for (const x of reachable_states[i]) {
                 clos += state_map[x] + ",";
             }
             closure[state_map[i]] = clos.slice(0, -1);
-
         }
     }
     const closure = (nfa, hash_of_states, state_map) => {
@@ -136,9 +130,7 @@ const Nfa = (props) => {
 
                     s = "";
                 }
-                else if (x === "-") {
-                    // cout << "inside continue\n";
-
+                else if (x === "-") {          
                     continue;
                 }
                 else
@@ -151,25 +143,16 @@ const Nfa = (props) => {
         const closure = new Map();
         find_closure(graph, reachable_state, states);
         store_closure(reachable_state, state_map, closure);
-
         nfa_to_dfa(closure, nfa, closure[state_map[0]], hash_of_states, state_map);
     }
-
-
-
-
-
-
 
     const hash_of_states = new Map();
     props.states.map((val, i) => {
         return hash_of_states[val] = i;
     })
 
-
-
-
     closure(props.nfa, hash_of_states, props.states);
+
     return (
         <div>
             <Dfa dfa={dfa} inputSymbol={props.inputSymbol} final_state={final_states_of_dfa} />
