@@ -12,10 +12,7 @@ const Dfa = props => {
     dotStr += "node [shape = point]; INITIAL_STATE\n";
     dotStr += "node [shape = circle];\n";
     dotStr += "INITIAL_STATE -> " + props.dfa[0][0] + ";\n";
-    // console.log(props.final_state);
-    // for (let final of props.final_state) {
-    //     dotStr += "node [shape = doublecircle]; " + final + ";\n";
-    // }
+    
     let header = [];
     header.push(<th key="State">States</th>)
     let temp = props.inputSymbol.map((symbol) => {
@@ -29,7 +26,6 @@ const Dfa = props => {
             jsx.push(<td key={`dfa${(i + 1) * (j + 1)}`}>{props.dfa[i][j]}</td>)
             if (j > 0 ) {
                 dotStr +=`
-                     
                     ${props.dfa[i][0]}
                      ->  
                     ${props.dfa[i][j]==="-"?"Trap":props.dfa[i][j]} 
@@ -41,7 +37,7 @@ const Dfa = props => {
         body.push(<tr key={i + 1}>{jsx}</tr>)
     }
     dotStr += "}";
-    // console.log(dotStr);
+
     return <div className="dfa-content">
         <h1>DFA TRANSITION TABLE:</h1>
         <Table striped bordered hover size="sm">
