@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import Button from './FormElements/Button'
-import './Simulation.css'
-import Input from './Input'
-// import Card from './UIElements/Card'
+import Button from './FormElements/Button';
+import './Simulation.css';
+import Input from './Input';
 const Simulation = props => {
     const [transition, setTransition] = useState(false);
     const [inputSymbol, setSymbol] = useState([])
