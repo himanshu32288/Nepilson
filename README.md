@@ -1,6 +1,6 @@
 # Nepilson 
  \
-This App will Convert given Nfa with epilson move to equivalent dfa.
+This App will Convert given epsilon NFA  to equivalent dfa(note:not nfa to dfa).
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 <h3 align="left">Languages and Tools:</h3>
 <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a>  
@@ -14,11 +14,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 2.`npm start` for starting Development Server.
 
 ## Guidline to run This project.
-1.States and input Symbol Should be entered in csv format i e,A,B,C etc.\
+1.States and input Symbol Should be entered in csv format i e,q0,q1,q2 etc.\
 2.Do not write epilson as a state because it is automatically generated.\
 3.In place of Empty transition enter "-".\
 4.If a state going to more than one transition enter transition in csv format\
-  For ex:-if A on input 0 going to B and C smiply enter B,C.
+  For ex:-if A on input 0 going to B and C  enter B,C.
 
 
 
