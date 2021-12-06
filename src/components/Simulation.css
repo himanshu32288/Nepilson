@@ -2,10 +2,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40vw;
-  height: 20vh;
-  margin: 30px 30px 5px 400px;
+  width: 50vw;
+  height: 25vh;
+  margin: 30px 25vw;
 }
+
+.form-holder input {
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
 .button {
   margin-top: 10px;
 }
@@ -14,3 +20,18 @@
   display: flex;
   flex-direction: row;
 }
+
+@media only screen and (max-width: 699px) {
+  .form-holder {
+    width: 70vw;
+    margin: 30px 15vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .form-holder {
+    width: 90vw;
+    margin: 30px 5vw;
+  }
+}
+

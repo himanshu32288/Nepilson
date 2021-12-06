@@ -61,6 +61,11 @@
 }
 
 .button-success {
-  background: rgb(0, 255, 0);
-  border-color: rgb(0, 255, 0);
+  background: rgb(30, 90, 30);
+  border-color: rgb(30, 90, 30);
+}
+
+.button-success:hover {
+  background: rgb(72, 161, 72);
+  border-color: rgb(72, 161, 72);;
 }
