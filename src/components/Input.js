@@ -46,7 +46,7 @@ const Input = (props) => {
         <>
             <div className="table-content">
                 <h1>NFA TRANSITION TABLE:</h1>
-                <Table striped bordered hover size="sm">
+                <Table striped bordered hover responsive>
                     <thead>
                         <tr>
                             {header}

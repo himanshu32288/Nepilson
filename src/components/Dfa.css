@@ -1,8 +1,23 @@
 .dfa-content {
-  width: auto;
+  width: calc(min(90vw, 800px));
   overflow-x: auto;
   white-space: nowrap;
-  margin-left: 20rem;
-  margin-right: 20rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5rem;
+  padding: calc(min(5vw, 30px));
+}
+
+.dfa-transition-diagram {
+  width: calc(min(540px, 90vw - 40px)); 
+  margin: 0px auto 0px 0px;
+  padding: 20px; 
+  border-radius: 12px; 
+  border: 1px solid lightgray;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+}
+
+.dfa-transition-diagram svg {
+  width: 100%; 
+  height: 100%;
 }

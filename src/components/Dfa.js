@@ -40,7 +40,7 @@ const Dfa = props => {
 
     return <div className="dfa-content">
         <h1>DFA TRANSITION TABLE:</h1>
-        <Table striped bordered hover size="sm">
+        <Table striped bordered hover responsive style={{ marginBottom: '50px' }}>
             <thead>
                 <tr>
                     {header}
@@ -52,7 +52,9 @@ const Dfa = props => {
             </tbody>
         </Table>
         <h1>DFA TRANSITION DIAGRAM:</h1>
-        <Graphviz dot={`${dotStr}`} />
+        <div className="dfa-transition-diagram">
+            <Graphviz dot={`${dotStr}`} />
+        </div>
     </div>
 }
 
