@@ -19,6 +19,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3.In place of Empty transition enter "-".\
 4.If a state going to more than one transition enter transition in csv format\
   For ex:-if A on input 0 going to B and C  enter B,C.
+## DEMO
+![image](https://user-images.githubusercontent.com/77279763/145851397-a81fcfeb-e525-4dd8-838a-5b3e5d18b5fa.png)
+![image](https://user-images.githubusercontent.com/77279763/145851783-f18f7947-be53-40d9-a954-b5bdfc8fa37e.png)
 
 
 
