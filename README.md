@@ -17,12 +17,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Guidline to run This project.
 
-1.States and input Symbol should be entered in csv format i e,q0,q1,q2 etc.\
+1.States and input symbol should be entered in csv format i e,q0,q1,q2 etc.\
 2.Do not write epilson as a state because it is automatically generated.\
-3.In place of Empty transition enter "-".\
+3.In place of empty transition enter "-".\
 4.If a state going to more than one transition enter transition in csv format\
  For ex:-if A on input 0 going to B and C enter B,C. \
-5.Input symbols and Insput states should be consist of english alphabet only (limitation of visualisation library used)
+5.Input symbols and input states should be consist of english alphabet only (limitation of visualisation library used)
 
 ## DEMO
 
