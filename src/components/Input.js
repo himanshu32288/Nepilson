@@ -16,7 +16,7 @@ const Input = (props) => {
         return <th key={symbol}>{symbol}</th>
     })
     header = [...header, ...temp];
-
+     
     header.push(<th key={"epilson"} >Epsilon</ th>)
     for (let i = 0; i < props.row; i++) {
         let jsx = [];

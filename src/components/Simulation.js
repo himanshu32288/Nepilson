@@ -14,7 +14,7 @@ const Simulation = props => {
     const getInput = (event) => {
 
 
-        let symbols = [...document.getElementById('inputSymbol').value.split(',')] ////destructing
+        let symbols = document.getElementById('inputSymbol').value.split(',') ////destructing
         setSymbol(symbols);
         let inputStates = document.getElementById('states').value.split(',');
         setStates(inputStates);

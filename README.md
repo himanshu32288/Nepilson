@@ -1,30 +1,33 @@
-# Nepilson 
- \
-This App will Convert given epsilon NFA  to equivalent dfa(note:not nfa to dfa).
+# Nepilson
+
+\
+This App will Convert given epsilon NFA to equivalent dfa.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 <h3 align="left">Languages and Tools:</h3>
 <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a>  
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
 <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
-<a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> 
-
+<a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a>
 
 ## Steps To Run This project
+
 1.Run `npm install` from root folder i.e,Nepilson.\
 2.`npm start` for starting Development Server.
 
 ## Guidline to run This project.
+
 1.States and input Symbol Should be entered in csv format i e,q0,q1,q2 etc.\
 2.Do not write epilson as a state because it is automatically generated.\
 3.In place of Empty transition enter "-".\
 4.If a state going to more than one transition enter transition in csv format\
-  For ex:-if A on input 0 going to B and C  enter B,C.
+ For ex:-if A on input 0 going to B and C enter B,C. \
+5.Input symbols and Insput states should be consist of english alphabet only (limitation of visualisation library used)
+
 ## DEMO
+
 ![image](https://user-images.githubusercontent.com/77279763/145851397-a81fcfeb-e525-4dd8-838a-5b3e5d18b5fa.png)
 ![image](https://user-images.githubusercontent.com/77279763/145851783-f18f7947-be53-40d9-a954-b5bdfc8fa37e.png)
-
-
-
 
 ## Available Scripts
 

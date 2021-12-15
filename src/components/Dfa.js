@@ -8,11 +8,12 @@ const Dfa = props => {
     let dotStr = "digraph fsm {\n";
     dotStr += "rankdir=LR;\n";
     dotStr += 'size="8,5";\n';
-    dotStr += "node [shape = doublecircle]; " + props.final_state + ";\n";
+    if (props.final_state.length !== 0)
+        dotStr += "node [shape = doublecircle]; " + props.final_state + ";\n";
     dotStr += "node [shape = point]; INITIAL_STATE\n";
     dotStr += "node [shape = circle];\n";
     dotStr += "INITIAL_STATE -> " + props.dfa[0][0] + ";\n";
-    
+
     let header = [];
     header.push(<th key="State">States</th>)
     let temp = props.inputSymbol.map((symbol) => {
@@ -24,11 +25,11 @@ const Dfa = props => {
         let jsx = [];
         for (let j = 0; j < props.dfa[0].length; j++) {
             jsx.push(<td key={`dfa${(i + 1) * (j + 1)}`}>{props.dfa[i][j]}</td>)
-            if (j > 0 ) {
-                dotStr +=`
+            if (j > 0) {
+                dotStr += `
                     ${props.dfa[i][0]}
                      ->  
-                    ${props.dfa[i][j]==="-"?"Trap":props.dfa[i][j]} 
+                    ${props.dfa[i][j] === "-" ? "Trap" : props.dfa[i][j]} 
                      [label= 
                     ${props.inputSymbol[j - 1]} 
                     ];\n`;
@@ -37,7 +38,7 @@ const Dfa = props => {
         body.push(<tr key={i + 1}>{jsx}</tr>)
     }
     dotStr += "}";
-
+    console.log(dotStr);
     return <div className="dfa-content">
         <h1>DFA TRANSITION TABLE:</h1>
         <Table striped bordered hover responsive style={{ marginBottom: '50px' }}>
