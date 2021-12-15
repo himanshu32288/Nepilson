@@ -78,7 +78,6 @@ const Nfa = (props) => {
 
     }
 
-
     const dfs = (graph, src, visited) => {
         //DFS to find all reachable node from given node
         visited[src] = true;
@@ -89,6 +88,7 @@ const Nfa = (props) => {
         }
         return;
     }
+
     const find_closure = (graph, reachable_states, n) => {
         for (let i = 0; i < n; i++) { //n=states
             const visited = new Array(n).fill(false);
@@ -96,13 +96,14 @@ const Nfa = (props) => {
             dfs(graph, i, visited);
 
             reachable_states[i] = [];
-              for (let j = 0; j < n; j++) {
+            for (let j = 0; j < n; j++) {
                 if (visited[j])
                     reachable_states[i].push(j);
-                }
+            }
         }
 
     }
+
     const store_closure = (reachable_states, state_map, closure) => {
 
 
@@ -114,6 +115,7 @@ const Nfa = (props) => {
             closure[state_map[i]] = clos.slice(0, -1);
         }
     }
+
     const closure = (nfa, hash_of_states, state_map) => {
         const states = nfa.length;
         const inputSymbol = nfa[0].length;
@@ -130,7 +132,7 @@ const Nfa = (props) => {
 
                     s = "";
                 }
-                else if (x === "-") {          
+                else if (x === "-") {
                     continue;
                 }
                 else

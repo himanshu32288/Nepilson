@@ -19,7 +19,9 @@ const Dfa = props => {
     let temp = props.inputSymbol.map((symbol) => {
         return <th key={symbol + 999}>{symbol}</th>
     })
+
     header = [...header, ...temp];
+
     let body = [];
     for (let i = 0; i < props.dfa.length; i++) {
         let jsx = [];
@@ -38,14 +40,13 @@ const Dfa = props => {
         body.push(<tr key={i + 1}>{jsx}</tr>)
     }
     dotStr += "}";
-    console.log(dotStr);
+
     return <div className="dfa-content">
         <h1>DFA TRANSITION TABLE:</h1>
         <Table striped bordered hover responsive style={{ marginBottom: '50px' }}>
             <thead>
                 <tr>
                     {header}
-
                 </tr>
             </thead>
             <tbody>

@@ -8,16 +8,17 @@ const Input = (props) => {
     const [final, setFinal] = useState(false)
     const input = [];
     const [nfa, setNfa] = useState([]);
-
     let header = [];
     header.push(<th key="States">States</th>)
+
     let temp = props.inputSymbol.map((symbol) => {
 
         return <th key={symbol}>{symbol}</th>
     })
     header = [...header, ...temp];
-     
+
     header.push(<th key={"epilson"} >Epsilon</ th>)
+
     for (let i = 0; i < props.row; i++) {
         let jsx = [];
         for (let j = 0; j < props.col + 2; j++) {
